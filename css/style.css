@@ -1,0 +1,302 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243, 243, 243)
+}
+
+/* Global */
+.container{
+    width: 80%;     /*Sets the width of the content*/
+    margin: auto;   /*Puts the content in the middle*/
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: white
+}
+
+.dark{
+    background: #324957;
+    color: #ffffff;
+}
+
+.bold{
+    font-weight: bold;
+}
+.tab{
+    margin-left: 20px;
+}
+/* --------------Header------------------ */
+header{
+    background: #324957;
+    color: white;
+    border-bottom: rgb(255, 102, 0) solid 3px;
+}
+
+header h1{
+    font-size: 35px;
+    
+}
+
+header a{
+    color: white;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/* ----------Nav--------- */
+
+header nav{
+    float: right;
+    margin-top: 35px;
+}
+
+header nav ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+header nav ul li{
+    display: inline;    /* If use this, no need for float */
+    padding: 0px 40px 0px 0px;
+}
+
+#branding{
+    float: left;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a{
+    transition-duration: 0.2s;
+}
+
+header a:hover{
+    color: #cccccc;
+}
+
+
+/* ---------------Showcase------------- */
+#showcase{
+    min-height: 450px;
+    background: url('../images/showcase.jpg') no-repeat ;
+    background-position: left bottom; 
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    word-spacing: 0.2em;
+    line-height: 1.8em;
+}
+
+
+/* ------Newsletter--------- */
+
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #324957;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float:right;   
+    margin-top: 20px; 
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* -----Boxes------ */
+#boxes{
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding-right: 3.33%;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 60%;
+}
+
+/* For About Page */
+#boxes h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 80px;
+}
+
+#main-col{
+    float: left;
+    width: 65%;
+    padding-bottom: 30px;
+}
+
+#main h1{
+    font-size: 25px;
+}
+
+.meet{
+    background: #324957;
+    color: whitesmoke;
+}
+.name{
+    color: #ececec;
+}
+
+.mapouter{
+    border: #757575 1px solid;
+}
+#map2{
+    display: none;
+}
+/* End About Page */
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 25px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+aside#sidebar .quote button{
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+/* --------------- Services  -------------------- */
+ul#services li{
+    padding: 20px;
+    background: #e0e0e0;
+    border: #aaaaaa solid 1px;
+    margin-top: 10px;
+    box-shadow: #324957 -2px 1px;
+}
+
+p.price{
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+/* FOOTER */
+footer{
+    padding: 20px;
+    margin-top: 50px;
+    color: #ffffff;
+    background: #e8491d;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 900px){
+    
+
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+    header #branding,
+    header nav,
+    header nav li{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    #showcase h1{
+        font-size: 40px;
+        line-height: 1.2em;
+        padding-bottom: 5px;
+    }
+    #newsletter h1{
+        float: none;
+        text-align: center;
+    }
+    #newsletter form{
+        float: none;
+        text-align: center;
+    }
+    #newsletter button{
+        margin-top: 20px;
+    }
+    #boxes .box{
+        padding:0;
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+    #boxes .box img{
+        width: 50%;
+    }
+    #main{
+        text-align: center;
+    }
+    #main-col{
+        float: none;
+        width: 100%;
+        text-align:center;
+    }
+    aside#sidebar{
+        padding: 10px 10px;
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    #find-us h1{
+        padding-left: 5px;
+    }
+
+    #map2{
+        display: block
+    }
+    #map{
+        display:none;
+    }
+
+}
